@@ -100,6 +100,39 @@ section {
   font-size: 20px;
   font-weight: 500;
 }
+.home-text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.home-pic {
+  width: 50%;
+  text-align: center;
+}
+.home-pic img {
+  height: 450px;
+  width: 450px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .home-pic {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .home-pic img {
+    height: auto;
+  }
+  .home-text {
+    width: 100%;
+  }
+  .home {
+    height: 100%;
+    flex-direction: column;
+  }
+}
+
 .home-text h1 {
   font-size: var(--big-font);
   font-weight: 700;
@@ -175,6 +208,9 @@ header.sticky {
   align-items: center;
   gap: 1.5rem;
   margin: 0 30px;
+}
+.about-img {
+  text-align: end;
 }
 .about-img img {
   max-width: 530px;
@@ -471,7 +507,7 @@ form textarea {
     font-size: 2.5rem;
   }
   .home {
-    height: 87vh;
+    height: 100%;
   }
 }
 @media (max-width: 920px) {
